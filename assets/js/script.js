@@ -16,8 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function runGame() {
+/**
+ * The main game loop is called when the script is first loaded
+ * and after the users answers have been processed
+ */
 
+function runGame() {
+    // Creates two numbers between 1 and 25, math floow is 0 and the plus 1 makes it from 1 not 0.
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 }
 
 function checkAnswer() {
